@@ -1,0 +1,67 @@
+/*
+       document : style.css, for coding-club-tutorials
+         author : audrey
+    description : example css stylesheet
+
+
+                                      88
+                                      88
+                                      88
+    ,adPPYYba,  88       88   ,adPPYb,88  8b,dPPYba,   ,adPPYba,  8b       d8
+    ""     `Y8  88       88  a8"    `Y88  88P'   "Y8  a8P,,,,,88  `8b     d8'
+    ,adPPPPP88  88       88  8b      :88  88          8PP"""""""   `8b   d8'
+    88,    ,88  "8a,   ,a88  "8a,   ,d88  88          "8b,   ,aa    `8b,d8'
+    `"8bbdP"Y8   `"YbbdP'Y8   `"8bbdP"Y8  88           `"Ybbd8"'      Y88'
+                                                                     d8'
+                                                                    d8'
+*/
+
+
+
+
+html {
+    /* just google your colours if you don't know the codes */
+    
+    /* all of these are valid ways of making
+    your background (some shade of) green.
+    
+    pick ONE. if you choose multiple, then only the LAST one
+    will apply*/
+    background-color: green;
+    background-color: rgb(180, 255, 180);
+    background-color: #ccffcc;
+}
+
+.indent-this-section {
+    margin-left: 40px;
+}
+
+
+
+
+/*the stuff below is meant to be used for the nav bar tutorial*/
+
+body {
+    margin: 0;                /* this and the line below make sure */
+    padding: 0;               /* that your nav bar goes all the way */
+                              /* across the screen */
+}
+
+ul {
+    list-style: none;        /* gets rid of the bullet points */
+    background-color: black; /* background colour for nav bar */
+    height: 40px;            /* height of your nav bar */
+}
+
+li {
+    display: inline-block;   /* gets it not to look like a list */
+    width: 100px;            /* changes width of the buttons */
+    margin-top: 10px;        /* change until your text is centered */
+}
+
+li a {
+    font-family: Helvetica; /* changes font */
+    color: red;             /* changes text colour */
+    color: #00ff00;         /* changes colour to neon green */
+    text-decoration: none;  /* gets rid of the underline */
+}
