@@ -88,6 +88,22 @@ var ship = {
     }
 };
 
+function Bullet(x, y) {
+    this.xPos = x,
+    this.yPos = y,
+    this.speed = ship.speed + 3,
+
+    this.draw = function() {
+        
+    },
+    this.move = function() {
+        
+    }
+}
+
+var bulletArray = [];
+bulletArray.push(new Bullet(x, y));
+
 function gameLoop() {
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(ship.sprite, ship.xPos, ship.yPos, 75, 75);
