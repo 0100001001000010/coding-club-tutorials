@@ -15,7 +15,7 @@ var sketch = function(processing) {
             height: window.innerHeight - 20,
             midX: (window.innerWidth - 20) / 2,
             midY: (window.innerHeight - 20) / 2
-        }
+        };
         
         size(canvas.width, canvas.height);
         background(80);
