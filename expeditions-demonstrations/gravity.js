@@ -1,28 +1,36 @@
 /* global draw Processing size background mouseClicked mouseX mouseY noStroke ellipse rect fill */
 
+var canvas = {
+    width: window.innerWidth,
+    height: window.innerHeight,
+    midX: window.innerWidth / 2,
+    midY: window.innerHeight / 2
+};
+window.onresize = function() {
+    canvas = {
+        width: window.innerWidth,
+        height: window.innerHeight,
+        midX: window.innerWidth / 2,
+        midY: window.innerHeight / 2
+    };
+};
+
+var balls = [];
+
+
+
+
+
+
+
+
 var sketch = function(processing) {
     with (processing) {
-        var canvas = {
-            width: window.innerWidth,
-            height: window.innerHeight,
-            midX: window.innerWidth / 2,
-            midY: window.innerHeight / 2
-        };
-        window.onresize = function() {
-            canvas = {
-                width: window.innerWidth,
-                height: window.innerHeight,
-                midX: window.innerWidth / 2,
-                midY: window.innerHeight / 2
-            };
-        };
-        
         size(canvas.width, canvas.height);
         background(0);
 
         fill(255);
         noStroke();
-        var balls = [];
 
         var floor = canvas.height - 30;
         var gravity = -1000;                // must be negative value
