@@ -35,9 +35,9 @@ var ctx = canvas.getContext("2d");  // ctx just stands for context
 
 var audrey = {
     setup: function() {
-        /* please don't use ctx.scale()
-           we'll be using that once everyone is done
-           to resize each person's letter as needed */
+        /* we will be calling ctx.scale() on our
+           drawings once everyone is done to resize
+           each person's letter as needed */
 
         ctx.lineWidth = 2;
         ctx.fillStyle = "#ff6666";
