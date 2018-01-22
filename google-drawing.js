@@ -19,10 +19,25 @@
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");  // ctx just stands for context
 
+
+
+
+/*  note how i'm storing all of my variables and functions inside an object
+    why? to avoid naming collisions
+
+    think about it. we're all probably going to have a variable called
+    xPos, yPos, xOffset, yOffset, size, width, height, radius, or something like that
+
+    if any of us make a variable or function with the same name, when we combine our
+    programs, they'll mess with each other. so be sure to put all of your stuff in
+    an object so this doesn't happen
+*/
+
 var audrey = {
     setup: function() {
-        // please don't use ctx.scale()
-        // we'll be using that once everyone's done to resize each person's letter as needed
+        /* please don't use ctx.scale()
+           we'll be using that once everyone is done
+           to resize each person's letter as needed */
 
         ctx.lineWidth = 2;
         ctx.fillStyle = "#ff6666";
@@ -74,8 +89,11 @@ var audrey = {
         this.drawRope();
         this.drawKnot();
         this.drawBase();
+
+        /* the order that you call your functions matters!
+           if i called drawBase before drawKnot, the ellipse
+           wouldn't cover the top of the triangle */
     }
 };
 
 audrey.draw();
-console.log(audrey);
